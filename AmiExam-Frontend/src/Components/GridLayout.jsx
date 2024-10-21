@@ -1,45 +1,45 @@
 import React from "react";
+import UploadCSV from "./uploadForm";
 import { Calendar, Gift, MessageSquare } from "lucide-react";
+import ScheduleTestCard from "./scheduleTestCard";
 const FeatureGrid = () => {
   return (
-    <div className="w-full h-screen  mx-auto p-4">
-      <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-4">
-        {/* Customization Card */}
-        <div className="bg-purple-200 h-4/5 p-4 rounded-lg col-span-2 row-span-3 flex flex-col">
-          <h2 className="text-2xl font-bold mb-4">Customization</h2>
-
-          <p className="text-sm">
-            Use a pre-designed template or personalize with video, stickers,
-            fonts, and more
-          </p>
+    <div className="w-full mx-auto p-4 mt-5">
+      <div className="w-full grid grid-cols-4 grid-rows-2 gap-4">
+        <div className="border-[1.5px] border-grey-800 h-4/5 p-4 rounded-lg col-span-2 row-span-2 flex flex-col shadow-md">
+          <h1 className="text-emerald-500 text-center pb-2 font-bold text-2xl">
+            SCHEDULE TEST
+          </h1>
+          <ScheduleTestCard></ScheduleTestCard>
         </div>
 
         {/* Scheduling Card */}
-        <div className="bg-pink-200 p-4 rounded-lg col-span-2 row-span-1 flex flex-col">
-          <h2 className="text-2xl font-bold mb-2">Scheduling</h2>
-          <p className="mb-4 text-sm flex-grow">
-            Schedule all your cards and gifts now and we'll send them later
-          </p>
-          <div className="flex items-end space-x-2 h-1/2">
-            <div className="bg-green-300 w-1/3 rounded-lg"></div>
-          </div>
+        <div className="border-[1.5px] border-grey-900 p-4 rounded-lg col-span-2 row-span-1 flex flex-col shadow-md">
+          <h1 className="text-emerald-500 text-center pb-2 font-bold text-2xl">
+            ADD QUESTIONS
+          </h1>
+          <UploadCSV></UploadCSV>
         </div>
 
         {/* Wallet Card */}
-        <div className="bg-green-200 p-4 rounded-lg col-span-1 row-span-1 flex flex-col">
-          <h2 className="text-xl font-bold mb-2">Wallet</h2>
+        <div className="border-[1.5px] border-grey-500 p-4 rounded-lg col-span-1 row-span-1 flex flex-col shadow-md">
+          <h2 className="text-emerald-500 text-center pb-2 font-bold text-2xl">
+            ALL TESTS
+          </h2>
 
-          <p className="text-xs">
-            Access all your gifts and save up your Givngli Cash
-          </p>
+          <button className="w-full bg-emerald-700 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg">
+            View All Tests
+          </button>
         </div>
 
         {/* Inbox Card */}
-        <div className="bg-yellow-200 p-4 rounded-lg col-span-1 row-span-1 flex flex-col">
-          <h2 className="text-xl font-bold mb-2">Inbox</h2>
-          <p className="mb-2 text-xs">
-            Track your gifts, group chats, and sent cards
-          </p>
+        <div className="border-[1.5px] border-grey-500 p-4 rounded-lg col-span-1 row-span-1 flex flex-col shadow-md">
+          <h2 className="text-emerald-500 text-center pb-2 font-bold text-2xl">
+            TOP SCORERS
+          </h2>
+          <button className="w-full bg-emerald-700 hover:bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg">
+            View Top Scorers
+          </button>
         </div>
       </div>
     </div>

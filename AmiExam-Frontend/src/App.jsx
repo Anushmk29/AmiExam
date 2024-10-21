@@ -1,11 +1,12 @@
 import React from "react";
+import Navbar from "./Components/navbar2";
 import GridLayout from "./Components/GridLayout";
-import Navbar from "./Components/Navbar";
+
 function App() {
   return (
     <>
-      <Navbar />
-      <GridLayout />
+      <Navbar></Navbar>
+      <GridLayout></GridLayout>
     </>
   );
 }
